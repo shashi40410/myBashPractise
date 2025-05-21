@@ -1,0 +1,9 @@
+#!/bin/bash
+
+logpath="/home/shashi/myscripts/processkill.sh"
+checksum=$(md5sum "$logpath" | awk '{print $1}')
+if [ "$checksum" == "bba34f059e94aae240059d9b514bf25d" ]; then
+        echo "File is integrity protected"
+else
+        echo "file is not inegrity protected"
+fi
