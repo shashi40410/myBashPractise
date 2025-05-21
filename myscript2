@@ -7,7 +7,7 @@ if [ $disk_usage -gt  $disklimit ]; then
         echo "diskusage is very hogh"
 else
         echo "diskuse is less"
-fi
+ fi
 
 # comment added to script
 # some extra command added. 
