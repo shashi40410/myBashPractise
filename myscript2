@@ -1,0 +1,10 @@
+#!/bin/bash
+
+disklimit=90
+disk_usage=$(df -h | grep "/usr/lib/wsl/drivers" | awk '{print $5}' | tr -d '%')
+
+if [ $disk_usage -gt  $disklimit ]; then
+        echo "diskusage is very hogh"
+else
+        echo "diskuse is less"
+fi
