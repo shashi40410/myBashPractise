@@ -8,3 +8,5 @@ if [ $disk_usage -gt  $disklimit ]; then
 else
         echo "diskuse is less"
 fi
+
+# comment added to script
